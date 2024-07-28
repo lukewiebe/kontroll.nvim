@@ -38,7 +38,7 @@ M.setup = function(user_config)
 			}
 			local colors = vim.g.kontroll.colors
 			local current_mode = vim.fn.mode()
-			vim.system({ "kontroll", "set-rgb-all", "--color", colors[modes[current_mode]] }, { text = true }):wait()
+			vim.system({ "kontroll", "set-rgb-all", "--color", colors[modes[current_mode]] }, { text = true })
 		end,
 	})
 
@@ -47,7 +47,7 @@ M.setup = function(user_config)
 		group = autocmd_group,
 		-- stylua: ignore
 		callback = function()
-			vim.system({ "kontroll", "restore-rgb-leds" }, { text = true }):wait()
+			vim.system({ "kontroll", "restore-rgb-leds" }, { text = true })
 		end,
 	})
 end
