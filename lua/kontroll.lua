@@ -1,5 +1,3 @@
--- kontroll-nvim
-
 local M = {}
 
 M.setup = function(opts)
@@ -19,7 +17,7 @@ M.setup = function(opts)
 	if opts ~= nil then
 		config = vim.tbl_deep_extend("force", config, opts)
 	end
-	vim.g.kontroll_nvim_config = config
+	vim.g.kontroll = config
 
 	-- check if a keyboard is connected. If not, throw an error and make the user deal with it.
 	vim.system({ "kontroll", "restore-status-leds" }, { text = true }, function(obj)
@@ -54,7 +52,7 @@ M.setup = function(opts)
 				["!"] = "Normal",
 				["l"] = "Normal",
 			}
-			local colors = vim.g.kontroll_nvim_config.colors
+			local colors = vim.g.kontroll.colors
 			local current_mode = vim.fn.mode()
 			vim.system({ "kontroll", "set-rgb-all", "--color", colors[modes[current_mode]] }, { text = true }):wait()
 		end,
