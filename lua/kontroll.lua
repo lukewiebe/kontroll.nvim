@@ -4,11 +4,9 @@ M.setup = function(user_config)
 	local default_config = {
 		colors = {
 			["Normal"] = "#FFFFFF",
-			["Visual"] = "#FF0000",
-			["Visual Line"] = "#AA0000",
-			["Visual Block"] = "#880000",
-			["Insert"] = "#00FF00",
-			["Command"] = "#0000FF",
+			["Insert"] = "#780000",
+			["Command"] = "#007200",
+			["Visual"] = "#0D00A4",
 		},
 	}
 	if user_config ~= nil then
