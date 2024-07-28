@@ -1,3 +1,14 @@
+vim.g.kontroll = {
+	colors = {
+		["Normal"] = "#FFFFFF",
+		["Visual"] = "#FF0000",
+		["Visual Line"] = "#AA0000",
+		["Visual Block"] = "#880000",
+		["Insert"] = "#00FF00",
+		["Command"] = "#0000FF",
+	},
+}
+
 local autocmd_group = vim.api.nvim_create_augroup("Kontroll", { clear = true })
 
 -- check if a keyboard is connected. If not, throw an error and make the user deal with it.
