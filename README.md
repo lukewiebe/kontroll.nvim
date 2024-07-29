@@ -43,7 +43,7 @@ end)
 
 ### Paq
 
-```
+```lua
 require("paq").setup({
     'lukewiebe/kontroll.nvim',
 })
@@ -51,7 +51,7 @@ require("paq").setup({
 
 ### vim-plug
 
-```
+```vimscript
 Plug 'lukewiebe/kontroll.nvim'
 ```
 
@@ -59,7 +59,7 @@ Plug 'lukewiebe/kontroll.nvim'
 
 To initialize the plugin, put this in your `init.lua`.
 
-```
+```lua
 require("kontroll").setup()
 ```
 
@@ -67,7 +67,7 @@ require("kontroll").setup()
 
 You can customize the colors of your keyboard by passing options to `setup`. Here are the defaults:
 
-```
+```lua
 require("kontroll").setup({
 	colors = {
 		["Normal"] = "#FFFFFF",
