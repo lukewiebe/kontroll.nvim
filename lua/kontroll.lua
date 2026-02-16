@@ -1,6 +1,10 @@
 local M = {}
 
 M.setup = function(user_config)
+	if vim.fn.executable("kontroll") ~= 1 then
+		return
+	end
+
 	local default_config = {
 		colors = {
 			["Normal"] = "#FFFFFF",
